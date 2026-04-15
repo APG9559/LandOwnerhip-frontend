@@ -4,6 +4,7 @@ import LoginPage from './pages/LoginPage'
 import RegistrationPage from './pages/RegistrationPage';
 import Dashboard from './pages/Dashboard';
 import Landing from './pages/Landing';
+import PropertiesPage from './pages/PropertiesPage';
 function App() {
   return (
     <BrowserRouter>
@@ -12,9 +13,7 @@ function App() {
         <Route path='/login' element={<LoginPage />} />
         <Route path='/register' element={<RegistrationPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        {/* <Route path='/properties' element={<PropertiesPage />} />
-        <Route path='/' element={<Landing />} />
-        <Route path='*' element={<NotFound />} /> */}
+        <Route path='/properties' element={<PropertiesPage />} />
       </Routes>
     </BrowserRouter>
   );
